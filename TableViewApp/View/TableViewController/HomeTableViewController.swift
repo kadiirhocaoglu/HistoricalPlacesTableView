@@ -28,11 +28,10 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let place = viewModel.places[indexPath.row]
-        let cellPlace = tableView.dequeueReusableCell(withIdentifier: "PlaceCell")!
+        let cellPlace = tableView.dequeueReusableCell(withIdentifier: "PlaceCell") as! HomeTableViewCell
         
-        cellPlace.textLabel?.text = "\(place.since) - \(place.name)"
-        cellPlace.detailTextLabel?.text = "\(place.description)"
-
+        cellPlace.update(with: place)
+        
         return cellPlace
     }
     

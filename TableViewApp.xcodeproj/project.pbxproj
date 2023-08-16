@@ -15,6 +15,7 @@
 		93614AFD2A8BE95F00DD3E8C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93614AFC2A8BE95F00DD3E8C /* HomeTableViewController.swift */; };
 		93614B012A8BE9A700DD3E8C /* DataServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93614B002A8BE9A700DD3E8C /* DataServiceController.swift */; };
 		93614B062A8BEB1500DD3E8C /* TableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93614B052A8BEB1500DD3E8C /* TableModel.swift */; };
+		93614B082A8C566800DD3E8C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93614B072A8C566800DD3E8C /* HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		93614AFC2A8BE95F00DD3E8C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		93614B002A8BE9A700DD3E8C /* DataServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceController.swift; sourceTree = "<group>"; };
 		93614B052A8BEB1500DD3E8C /* TableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModel.swift; sourceTree = "<group>"; };
+		93614B072A8C566800DD3E8C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				93614AFC2A8BE95F00DD3E8C /* HomeTableViewController.swift */,
+				93614B072A8C566800DD3E8C /* HomeTableViewCell.swift */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93614B082A8C566800DD3E8C /* HomeTableViewCell.swift in Sources */,
 				93614AFD2A8BE95F00DD3E8C /* HomeTableViewController.swift in Sources */,
 				93614B062A8BEB1500DD3E8C /* TableModel.swift in Sources */,
 				93614B012A8BE9A700DD3E8C /* DataServiceController.swift in Sources */,
