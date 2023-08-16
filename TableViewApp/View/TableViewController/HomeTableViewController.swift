@@ -35,6 +35,11 @@ class HomeTableViewController: UITableViewController {
 
         return cellPlace
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Selected index \(indexPath.row)")
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
