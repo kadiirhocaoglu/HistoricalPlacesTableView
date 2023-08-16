@@ -10,6 +10,6 @@
 | <img src="https://github.com/kadiirhocaoglu/HistoricalPlacesTableView/blob/main/forReadme/changeCustomCell2.png" width="300"> | <img src="https://github.com/kadiirhocaoglu/HistoricalPlacesTableView/blob/main/forReadme/changeCustomCell.png" width="600"> |
 
 ## Added Cell Relocation and Deletion
-| -- | -- | -- | -- | -- |
+| --> | --> | --> | --> | -- |
 |---------|---------|---------|---------|---------|
 | <img src="https://github.com/kadiirhocaoglu/HistoricalPlacesTableView/blob/main/forReadme/fr1.png" width="200"> | <img src="https://github.com/kadiirhocaoglu/HistoricalPlacesTableView/blob/main/forReadme/tw2.png" width="200"> | <img src="https://github.com/kadiirhocaoglu/HistoricalPlacesTableView/blob/main/forReadme/th3.png" width="200"> | <img src="https://github.com/kadiirhocaoglu/HistoricalPlacesTableView/blob/main/forReadme/fr4.png" width="200"> | <img src="https://github.com/kadiirhocaoglu/HistoricalPlacesTableView/blob/main/forReadme/last.png" width="200"> | 
