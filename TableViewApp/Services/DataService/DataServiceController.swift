@@ -9,7 +9,7 @@ import Foundation
 
 class PlaceFakeService{
     
-    let places: [Places] = [
+    var places: [Places] = [
         Places(name: "Ayasofya (Hagia Sophia)", description: "Bizans İmparatoru Justinianus tarafından 537 yılında inşa edilen bu yapı, önce kilise olarak kullanıldı, sonra camiye dönüştü ve günümüzde müze olarak kullanılmaktadır.", since: 537),
         Places(name: "Topkapı Sarayı", description: "Osmanlı İmparatorluğu'nun merkezi olan saray, 15. yüzyılda inşa edilmiştir ve uzun süre Osmanlı padişahlarının ikametgahı olmuştur.", since: 1500),
         Places(name: "Yerebatan Sarnıcı (Basilica Cistern)", description: "Bizans dönemine ait su sarnıcı, 6. yüzyılda inşa edilmiştir ve sütunları ile ünlüdür.", since: 600),

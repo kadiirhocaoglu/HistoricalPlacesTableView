@@ -66,7 +66,13 @@
                             <outlet property="delegate" destination="PCy-cH-gPM" id="ihP-R0-Ngl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Historical Places" id="ggK-QC-aLk"/>
+                    <navigationItem key="navigationItem" title="Historical Places" id="ggK-QC-aLk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="cwk-8l-OCp">
+                            <connections>
+                                <action selector="editButtonTapped:" destination="PCy-cH-gPM" id="CqB-m9-MTE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Tj-y6-ZIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
