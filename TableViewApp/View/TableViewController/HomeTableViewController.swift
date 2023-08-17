@@ -40,6 +40,7 @@ class HomeTableViewController: UITableViewController {
         if editingStyle == .delete {
             viewModel.places.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            print(viewModel.places)
         }
     }
     
@@ -51,5 +52,21 @@ class HomeTableViewController: UITableViewController {
     @IBAction func editButtonTapped(_ button: UIBarButtonItem) {
         let tableViewEditingMode = tableView.isEditing
         tableView.setEditing(!tableViewEditingMode, animated: true)
+    }
+    
+    @IBAction func unWindFromNewPlace(_ segue: UIStoryboardSegue)
+    {
+        guard segue.identifier == "saveUnwind",
+              let sourceViewController = segue.source as? HomeFormTableViewController,
+              let newPlace = sourceViewController.place else {return}
+        
+        var count = viewModel.places.count
+        
+        let newIndexPath = IndexPath(row: count, section: 0)
+        
+        viewModel.places.append(newPlace) // bu sıra önemli önce table view eklenir sonra diziye eklenir
+    
+        tableView.insertRows(at: [newIndexPath], with: .automatic)
+
     }
 }
