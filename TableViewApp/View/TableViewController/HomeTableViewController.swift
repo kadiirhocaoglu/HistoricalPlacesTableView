@@ -8,6 +8,21 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
     }
  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toEditPlace"{
+            let selectedRowIndex = tableView.indexPathForSelectedRow!
+            let selectedItem = viewModel.places[selectedRowIndex.row]
+            
+            
+            let navigationController = segue.destination as? UINavigationController
+            
+            let editPlaceController = navigationController?.topViewController as? HomeFormTableViewController
+            
+            editPlaceController?.place = selectedItem
+            
+        }
+    }
+
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -29,7 +44,7 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Selected index \(indexPath.row)")
+        performSegue(withIdentifier: "toEditPlace", sender: nil)
     }
     
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
@@ -60,13 +75,15 @@ class HomeTableViewController: UITableViewController {
               let sourceViewController = segue.source as? HomeFormTableViewController,
               let newPlace = sourceViewController.place else {return}
         
-        var count = viewModel.places.count
+        if let isSelectedRow = tableView.indexPathForSelectedRow{
+            viewModel.places[isSelectedRow.row] = newPlace
+            tableView.reloadRows(at: [isSelectedRow], with: .automatic)
+        }else{
+            let count = viewModel.places.count
+            let newIndexPath = IndexPath(row: count, section: 0)
+            viewModel.places.append(newPlace) // bu sıra önemli önce table view eklenir sonra diziye eklenir
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
         
-        let newIndexPath = IndexPath(row: count, section: 0)
-        
-        viewModel.places.append(newPlace) // bu sıra önemli önce table view eklenir sonra diziye eklenir
-    
-        tableView.insertRows(at: [newIndexPath], with: .automatic)
-
     }
 }

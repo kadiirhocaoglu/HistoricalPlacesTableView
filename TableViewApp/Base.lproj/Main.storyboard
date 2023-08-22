@@ -74,14 +74,17 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="JOh-J1-1uf">
                             <connections>
-                                <segue destination="htX-8A-aMg" kind="presentation" id="rFZ-i6-orc"/>
+                                <segue destination="htX-8A-aMg" kind="presentation" identifier="toAddPlace" id="rFZ-i6-orc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="htX-8A-aMg" kind="presentation" identifier="toEditPlace" id="Ltt-gV-WaX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Tj-y6-ZIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1701.5267175572519" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1698" y="1"/>
         </scene>
         <!--Tarihi Yerler Ekle-->
         <scene sceneID="YkU-9v-XOc">
@@ -228,9 +231,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AID-fk-bOY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2330.5343511450383" y="669.71830985915494"/>
+            <point key="canvasLocation" x="2518" y="289"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ltt-gV-WaX"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

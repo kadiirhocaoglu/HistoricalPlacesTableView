@@ -16,6 +16,12 @@ class HomeFormTableViewController: UITableViewController {
     var place: Places?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let place = place{
+            nameTextField.text = place.name
+            descriptionTextField.text = place.description
+            sinceTextField.text = "\(place.since)"
+        }
 
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
